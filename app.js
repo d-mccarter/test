@@ -1,5 +1,3 @@
-import "./style.css";
-
 const displayEl = document.getElementById("display");
 const expressionEl = document.getElementById("expression");
 const keypad = document.getElementById("keypad");
