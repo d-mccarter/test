@@ -4,31 +4,21 @@ A simple web calculator with basic arithmetic: add, subtract, multiply, and divi
 
 ## Open on iPhone / iPad
 
-Once GitHub Pages is deploying the built app, open this URL in Safari:
-
 **https://d-mccarter.github.io/test/**
 
-Tips:
-1. Merge this repo’s Pages deploy workflow to `main` (or push the deploy setup yourself).
-2. In the repo: **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**.
-3. Wait for the **Deploy to GitHub Pages** Action to finish (green check on the Actions tab).
-4. On your iPhone, open Safari and go to `https://d-mccarter.github.io/test/`.
-5. Optional: tap the Share button → **Add to Home Screen** for an app-like icon.
+Repo setup:
+1. **Settings → Pages → Source** → **GitHub Actions**
+2. Push to `main` (or merge a PR) and wait for **Deploy to GitHub Pages** to finish
+3. Open the URL above in Safari
+
+Optional: Share → **Add to Home Screen**.
 
 ## Run locally
 
-```bash
-npm install
-npm run dev
-```
-
-Then open the URL Vite prints (usually `http://localhost:5173`).
-
-## Build for production
+No install needed. From the repo root:
 
 ```bash
-npm run build
-npm run preview
+python3 -m http.server 5173
 ```
 
-`npm run build` outputs static files to `dist/`. GitHub Actions builds this folder and publishes it to Pages.
+Then open `http://localhost:5173`.
